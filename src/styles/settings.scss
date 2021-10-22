@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
-
-$color1: blue;
-$color2: red;
+$color1: #20232a;
+$color2: #61dafb;
 $white: #fff;
 
 $font1: 'Sawarabi Gothic', sans-serif;
@@ -14,6 +13,7 @@ $font1: 'Sawarabi Gothic', sans-serif;
 }
 body {
     height: 100vh;
+    background-color: $white;
 }
 ul {
     list-style: none;
@@ -21,7 +21,11 @@ ul {
 a{
     text-decoration: none;
     cursor: pointer;
-    &:visited {
+    color: #fff;
+    :visited {
         color: none;
     }
+}
+.pad {
+    padding-top: 50px;
 }

@@ -8,13 +8,15 @@ export interface NavItems {
 
 const Nav: React.FC<NavItems> = ({items}:NavItems):ReactElement => {
     return (
+        <header>
         <nav> 
             <ul className="nav">
-                {items.map(item => {
+                {items.map(item =>{
                     return <NavLink className="nav-item" activeClassName="nav-active" exact to={item.link}>{item.name}</NavLink>
                 })}
             </ul>
         </nav>
+        </header>
     );
 };
 

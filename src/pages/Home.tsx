@@ -1,20 +1,15 @@
 import React, { ReactElement } from 'react';
 import Nav from '../Components/Nav';
-import NavItem from '../Interfaces/INav';
-
-const navItems: NavItem[] = [
-    {name:"Home", link:"/"}, 
-    {name:"Informations",link:"/informations"},
-    {name:"Technologies", link:"/competences"}, 
-    {name:"CV",link:"/CV"}, 
-    {name:"A Propos", link:"/about"}
-];
+import { navItems } from '../App';
 
 const Home = () :ReactElement => {
     return (
-        <div className="nav-container">
+        <div>
             <Nav items={navItems}></Nav>
-            <h1>Home</h1>
+            <div className="container-home pad">
+                <p className="label">Chigot Julien</p>
+                <p className="label">Apprenti Développeur</p>
+            </div>
         </div>
     );
 };
